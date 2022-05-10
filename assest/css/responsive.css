@@ -250,5 +250,18 @@
     .footer__download-qr {
         width: 30%;
     }
+
+    .messeage-footer {
+        width: 73px;
+        height: 32px;
+        margin-right: 4px;
+    }
+
+    .messeage-footer-icon {
+        font-size: 1.4rem;
+    }
     
+    .messeage-footer-tilte {
+        font-size: 1.5rem;
+    }
 }
