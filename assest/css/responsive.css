@@ -1,0 +1,214 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+
+    #header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+    }
+
+    .header__sort-bar {
+        display: flex;
+    }
+
+    .mobile-category {
+        display: block;
+    }
+
+    #container {
+        margin-top: calc(var(--header-height) + var(--header-sort-bar));
+    }
+    
+    .btn-back {
+        display: block;
+    }
+    
+    .footer__policy-item {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+}
+
+/* Talet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 60px;
+        --navbar-height: 0px;
+    }
+
+    .hide-on-tablet {
+        display: none;
+    }
+
+    .header__logo,
+    .header__search-title {
+        display: none;
+    }
+
+    .header__cart {
+        width: 70px;
+        text-align: right;
+    }
+
+    .footer__infomation {
+        padding-top: 15px;
+    }
+    
+    .footer__heading {
+        margin-top: 30px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    :root {
+        --header-height: 55px;
+        --navbar-height: 0px;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-with-search {
+        justify-content: space-between;
+    }
+
+    .header__logo,
+    .header__cart {
+        width: unset;
+    }
+    
+    .header__cart {
+        margin-right: 12px;
+    }
+
+    .header-mobile-search {
+        display: block;
+    }
+
+    .header__search {
+        --height-mobile-search: 40px;
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        height: var(--height-mobile-search);
+        z-index: 1;
+        padding: 0 5px;
+        animation: mobileSearch ease-out 0.3s;
+        display: none;
+    }
+
+    @keyframes mobileSearch {
+        from {
+            height: 0;
+        }
+        to {
+            height: var(--height-mobile-search);
+        }
+    }
+
+    .header__logo-link {
+        justify-content: center;
+    }
+
+    .header__logo-img {
+        width: 50%;
+    }
+
+    .header__cart-item-icon {
+        font-size: 2rem;
+    }
+
+    .header__cart-list {
+        width: 350px;
+    }
+    
+    .header__search-title {
+        display: none;
+    }
+    
+    .header__sort-price {
+        min-width: 0;
+    }
+
+    .header__sort-price-item {
+        padding: 12px 10px;
+    }
+
+    .home-product-item__price-old {
+        font-size: 1.2rem   ;
+    }
+
+    .home-product-item__price-current {
+        font-size: 1.4rem;
+    }
+
+    .home-product-item__action {
+        flex-direction: column;
+    }
+
+    .home-product-item__rate {
+        margin-top: 8px;
+    }
+
+    .home-product-item__sold {
+        margin-left: auto;
+    }
+
+    .pagination-item {
+        margin: 0 2px;
+    }
+
+    .pagination-item__link {
+        font-size: 1.6rem;
+        min-width: 35px;
+    }
+
+    .footer__infomation {
+        text-align: center;
+    }
+
+    .footer__policy-item-img {
+        margin-left: 10px;
+    }
+
+    .footer-item__link {
+        font-size: 1.3rem;
+        display: block;
+        padding: 8px 0 5px;
+    }
+
+    .footer__heading {
+        font-size: 1.5rem;
+        margin: 20px 0 12px;
+    }
+
+    .footer-list-pay {
+        justify-content: center;
+    }
+
+    .footer-item:nth-child(3) .footer-item__icon {
+        margin-left: -9px;
+    }
+
+    .footer__download {
+        display: block;
+    }
+
+    .footer__download-apps {
+        margin-left: 0;
+    }
+
+    .footer__download-qr {
+        width: 30%;
+    }
+    
+}
