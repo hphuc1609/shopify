@@ -101,7 +101,7 @@
     }
 
     .header__search {
-        --height-mobile-search: 40px;
+        --height-mobile-search: 45px;
         position: fixed;
         top: var(--header-height);
         left: 0;
@@ -110,27 +110,25 @@
         z-index: 1;
         padding-left: 0;
         animation: mobileSearch ease-out 0.3s;
-        display: none;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+        display: none;
     }
 
     @keyframes mobileSearch {
         from {
-            overflow-y: auto;
             height: 0;
         }
         to {
-            overflow-y: scroll;
             height: var(--height-mobile-search);
         }
-    }
-
-    .header__search::-webkit-scrollbar {
-        display: none;
     }
     
     .header__search-input {
         margin-left: 5px;
+    }
+
+    .header__search-select {
+        height: 32px;
     }
 
     .header__search-option {
