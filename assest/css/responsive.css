@@ -73,7 +73,7 @@
 /* Mobile */
 @media (max-width: 739px) {
     :root {
-        --header-height: 55px;
+        --header-height: 50px;
         --navbar-height: 0px;
     }
 
@@ -91,11 +91,13 @@
     }
     
     .header__cart {
+        position: relative;
+        top: 3px;
         margin-right: 12px;
     }
 
     .header-mobile-search {
-        display: block;
+        display: flex;
     }
 
     .header__search {
@@ -114,23 +116,21 @@
 
     @keyframes mobileSearch {
         from {
-            overflow: hidden;
+            overflow-y: auto;
             height: 0;
         }
         to {
-            overflow-y: auto;
+            overflow-y: scroll;
             height: var(--height-mobile-search);
         }
+    }
+
+    .header__search::-webkit-scrollbar {
+        display: none;
     }
     
     .header__search-input {
         margin-left: 5px;
-    }
-
-    .header__select-label {
-        display: flex;
-        align-items: center;
-        margin: 0 8px 0 4px;
     }
 
     .header__search-option {
@@ -185,6 +185,10 @@
 
     .header__sort-price-item {
         padding: 12px 10px;
+    }
+
+    .home-product-item__favourite span {
+        font-size: 1rem;
     }
 
     .home-product-item__body {

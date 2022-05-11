@@ -490,7 +490,7 @@
     color: var(--primary-color);
     background-color: var(--white-color);
     border-radius: 10px;
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--secondary-color);
 }
 
 .header__cart-list {
@@ -595,7 +595,7 @@
 .header__cart-product-head {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
 }
 
 .header__cart-product-name {
@@ -614,7 +614,7 @@
 
 .header__cart-product-size {
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.14rem;
     font-weight: 300;
 }
 
@@ -672,7 +672,7 @@
     color: var(--secondary-color);
 }
 
-.header__sort-item:last-child .header__sort-link {
+.header__sort-item:last-child {
     border-right: none;
 }
 
@@ -988,8 +988,7 @@
 }
 
 .category-item {
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 .category-item--active .category-item__link {
@@ -1004,6 +1003,16 @@
     color: var(--black-color);
     display: block;
     padding-bottom: 15px;
+}
+
+.category-item:first-child .category-item__link::before {
+    position: absolute;
+    content: "";
+    top: 3px;
+    left: -12px;
+    border-width: 4px 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--primary-color);
 }
 
 .category-item:last-child .category-item__link {
@@ -1045,7 +1054,7 @@
     display: block;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding: 12px 5px;
+    padding: 10px 5px;
     overflow: hidden;
     border-radius: 4px;
     background-color: #FFFFF0;
@@ -1250,6 +1259,7 @@
 
 .home-product-item__action {
     display: flex;
+    align-items: baseline;
     justify-content: space-between;
     margin-top: 15px;
 }
@@ -1278,7 +1288,7 @@ i.home-product-item__like-icon-red {
 
 .home-product-item__rate i {
     color: var(--gray-star-color);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .home-product-item__rate .home-product-item__star--gold  {
@@ -1309,7 +1319,6 @@ i.home-product-item__like-icon-red {
     padding: 0 4px;
     top: 10px;
     left: -4px;
-    font-size: 1.2rem;
     color: var(--primary-color);
     background-color: currentColor;
     border-top-right-radius: 3px;
@@ -1329,7 +1338,7 @@ i.home-product-item__like-icon-red {
 
 .home-product-item__favourite span {
     color: var(--white-color);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .home-product-item__favourite i {
