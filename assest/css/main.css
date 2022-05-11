@@ -892,11 +892,17 @@
     justify-content: space-around;
 }
 
+.category__seller {
+    display: flex;
+    justify-content: center;
+}
+
 .category__seller-favour {
     text-decoration: none;
     display: flex;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .category__seller-img {
@@ -908,7 +914,7 @@
 
 .category__seller-label {
     position: relative;
-    top: -8px;
+    top: -9px;
     font-size: 1.1rem;
     color: var(--white-color);
     background-color: var(--secondary-color);
@@ -920,6 +926,7 @@
     color: var(--white-color);
     text-align: center;
     line-height: 1.7;
+    margin-top: -20px;
 }
 
 .category__brand-name {
