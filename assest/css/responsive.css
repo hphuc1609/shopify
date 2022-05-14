@@ -60,6 +60,31 @@
         text-align: right;
     }
 
+    .shop-page__app {
+        margin: 0 -47px;
+    }
+    
+    .shop-page__overview {
+        width: 42.5%;
+    }
+    
+    .shop-page__head {
+        margin: 8px 0 10px 10px;
+    }
+
+    .shop-page__img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .category__brand-name.shop-page__brand-name {
+        font-size: 1.5rem;
+    }
+
+    .shop-page__item-info {
+        font-size: 1.4rem;
+    }
+
     .footer__infomation {
         padding-top: 15px;
     }
@@ -109,7 +134,7 @@
         height: var(--height-mobile-search);
         z-index: 1;
         padding-left: 0;
-        animation: mobileSearch ease-out 0.3s;
+        animation: mobileSearch linear 0.25s;
         border-bottom: 1px solid rgba(0, 0, 0, 0.15);
         display: none;
     }
@@ -190,7 +215,7 @@
     }
 
     .home-product-item__body {
-        padding: 8px 5px;
+        padding: 8px;
     }
 
     .home-product-item__price-old {
@@ -199,6 +224,10 @@
 
     .home-product-item__price-current {
         font-size: 1.4rem;
+    }
+
+    .home-product-item__rate i {
+        margin-top: -3px;
     }
 
     .home-product-item__sold {

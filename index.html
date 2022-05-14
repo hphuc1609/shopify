@@ -281,7 +281,7 @@
             <!-- Sort Bar: Tablet & Mobile -->
             <ul class="header__sort-bar">
                 <li class="header__sort-item">
-                    <a href="#" class="header__sort-link">Phổ Biến</a>
+                    <a href="#" class="header__sort-link header__sort-link--active">Phổ Biến</a>
                 </li>
                 <li class="header__sort-item">
                     <a href="#" class="header__sort-link">Mới Nhất</a>
@@ -301,6 +301,90 @@
             </ul>
         </header>
         <div id="container">
+            <div class="shop-page hide-on-mobile">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="shop-page__app col">
+                            <div class="shop-page__overview shop-page-overview--background">
+                                <div class="shop-page__overlay">
+                                    <div class="shop-page__head">
+                                        <a class="category__seller-favour" href="#">
+                                            <img src="https://cf.shopee.vn/file/3b280f9075b1f72c6e3dd7e9cf98abe4" alt="Avatar" class="shop-page__img">
+                                            <span class="category__seller-label">Yêu Thích</span>
+                                        </a>
+                                        <div class="shop-page__brand">
+                                            <h3 class="category__brand-name shop-page__brand-name">KB.Store - Thời Trang Nam</h3>
+                                            <span class="category__brand-online">
+                                                Online 8 phút trước
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="shop-page__bottom">
+                                        <a class="shop-page__follow" href="#">
+                                            <i class="shop-page__follow-icon fa-solid fa-plus"></i>
+                                            <span class="shop-page__follow-title">THEO DÕI</span>
+                                        </a>
+                                        <a class="shop-page__chat" href="#">
+                                            <i class="shop-page__chat-icon fa-solid fa-comment-dots"></i>
+                                            <span class="shop-page__chat-title">CHAT</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop-page__info">
+                                <ul class="shop-page__list">
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon fa-solid fa-store"></i>
+                                            Sản Phẩm:
+                                            <a href="#product" class="shop-page__item-count">190</a>
+                                        </span>
+                                    </li>
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon fa-solid fa-user-plus"></i>
+                                            Đang Theo: 
+                                            <span class="shop-page__item-count">5</span>
+                                        </span>
+                                    </li>
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon ti-comment-alt" style="margin-right: 13px;"></i>
+                                            Tỉ Lệ Phản Hồi Chat: 
+                                            <span class="shop-page__item-count">90% (Trong Vài Giờ)
+                                                <i class="shop-page__item-icon--help fa-regular fa-circle-question"></i>
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                                <ul class="shop-page__list">
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon fa-solid fa-user-group"></i>
+                                            Người Theo Dõi: 
+                                            <span class="shop-page__item-count">2,5k</span>
+                                        </span>
+                                    </li>
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon fa-regular fa-star" style="margin-right: 12px;"></i>
+                                            Đánh Giá: 
+                                            <span class="shop-page__item-count">4.9 (13k Đánh Giá)</span>
+                                        </span>
+                                    </li>
+                                    <li class="shop-page__item">
+                                        <span href="#" class="shop-page__item-info">
+                                            <i class="shop-page__item-icon fa-solid fa-user-check"></i>
+                                            Tham Gia: 
+                                            <span class="shop-page__item-count">7 Tháng Trước</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="content-app">
                 <div class="grid wide">
                     <div class="row sm-gutter">
@@ -312,7 +396,7 @@
                                         <div class="category__seller">
                                             <a class="category__seller-favour" href="#">
                                                 <img src="https://cf.shopee.vn/file/3b280f9075b1f72c6e3dd7e9cf98abe4" alt="Avatar" class="category__seller-img">
-                                                <span class="category__seller-label">Yêu thích</span>
+                                                <span class="category__seller-label">Yêu Thích</span>
                                             </a>
                                         </div>
                                         <div class="category__brand">
@@ -320,16 +404,6 @@
                                             <span class="category__brand-online">
                                                 Online 8 phút trước
                                             </span>
-                                        </div>
-                                        <div class="category__bottom">
-                                            <a class="category__follow" href="#">
-                                                <i class="category__follow-icon fa-solid fa-plus"></i>
-                                                <span class="category__follow-tilte">THEO DÕI</span>
-                                            </a>
-                                            <a class="category__chat" href="#">
-                                                <i class="category__chat-icon fa-solid fa-comment-dots"></i>
-                                                <span class="category__chat-tilte">CHAT</span>
-                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -422,7 +496,7 @@
                                 <i class="btn-back__icon fa-solid fa-angle-left"></i>
                                 Trở lại trang chủ
                             </a>
-                            <div class="home-product">
+                            <div class="home-product" id="product">
                                 <div class="row sm-gutter">
                                     <!-- Product item -->
                                     <div class="col l-2-4 m-4 c-6">
@@ -435,7 +509,7 @@
                                                 <div class="home-product-item__price">
                                                     <span class="home-product-item__price-old">200.000₫</span>
                                                     <span class="home-product-item__price-current">150.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -477,7 +551,7 @@
                                                 <div class="home-product-item__price">
                                                     <!-- <span class="home-product-item__price-old">200.000₫</span> -->
                                                     <span class="home-product-item__price-current">299.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -519,7 +593,7 @@
                                                 <div class="home-product-item__price">
                                                     <span class="home-product-item__price-old">299.000₫</span>
                                                     <span class="home-product-item__price-current">279.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -560,7 +634,7 @@
                                                 <div class="home-product-item__price">
                                                     <!-- <span class="home-product-item__price-old">200.000₫</span> -->
                                                     <span class="home-product-item__price-current">299.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -601,7 +675,7 @@
                                                 <div class="home-product-item__price">
                                                     <span class="home-product-item__price-old">299.000₫</span>
                                                     <span class="home-product-item__price-current">279.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -642,7 +716,7 @@
                                                     <div class="home-product-item__price">
                                                     <!-- <span class="home-product-item__price-old">299.000₫</span> -->
                                                     <span class="home-product-item__price-current">399.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -683,7 +757,7 @@
                                                 <div class="home-product-item__price">
                                                     <span class="home-product-item__price-old">299.000₫</span>
                                                     <span class="home-product-item__price-current">279.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -725,7 +799,7 @@
                                                 <div class="home-product-item__price">
                                                     <span class="home-product-item__price-old">299.000₫</span>
                                                     <span class="home-product-item__price-current">250.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
@@ -767,7 +841,7 @@
                                                 <div class="home-product-item__price">
                                                     <!-- <span class="home-product-item__price-old">299.000₫</span> -->
                                                     <span class="home-product-item__price-current">150.000₫</span>
-                                                    <div class="home-product-item__delivery hide-on-mobile">
+                                                    <div class="home-product-item__delivery">
                                                         <img src="https://thienminhoffice.com/thumb/400x0/3/upload/baiviet/icon02300x300-148.png" alt="" class="home-product-item__delivery-img">
                                                     </div>
                                                 </div>
